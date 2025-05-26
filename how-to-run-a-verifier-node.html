@@ -1,0 +1,453 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>How to Run a Verifier Node · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="faqs-and-common-issues-solutions.html" />
+    
+    
+    <link rel="prev" href="how-to-run-a-prover-node.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    The Cysic Network
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting Started</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="getting-started/quickstart.html">
+            
+                <a href="getting-started/quickstart.html">
+            
+                    
+                    Run a Prover, Verifier and more
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="how-to-run-a-prover-node.html">
+            
+                <a href="how-to-run-a-prover-node.html">
+            
+                    
+                    How to Run a Prover Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2" data-path="how-to-run-a-verifier-node.html">
+            
+                <a href="how-to-run-a-verifier-node.html">
+            
+                    
+                    How to Run a Verifier Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="faqs-and-common-issues-solutions.html">
+            
+                <a href="faqs-and-common-issues-solutions.html">
+            
+                    
+                    FAQs & Common Issues/Solutions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >How to Run a Verifier Node</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="how-to-run-a-verifier-node">How to Run a Verifier Node</h1>
+<h2 id="background">Background</h2>
+<p>ZK verifier nodes are one of the critical roles in Cysic Network. Their job is to verify the ZK proofs generated by the Prover Node, and obtain Cysic Network credits as the rewards. Operating a verifier node requires minimum understand of the DeeOps and requirement on the hardware.</p>
+<h2 id="connect-to-wallet">Connect to Wallet</h2>
+<ol>
+<li>Go to the Cysic Phase3 <a href="https://testnet-pre.prover.xyz/m" target="_blank">Website</a>: <a href="https://testnet-pre.prover.xyz/m" target="_blank">https://testnet-pre.prover.xyz/m</a></li>
+<li><p>Join Testnet Phase 3</p>
+<figure><img src=".gitbook/assets/00_cysic_home (2).PNG" alt=""><figcaption></figcaption></figure></li>
+<li><p>Connect to your wallet</p>
+<figure><img src=".gitbook/assets/01_connect_wallet (2).PNG" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/02_connect_wallet (3).PNG" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/03_connect_wallet (1).PNG" alt=""><figcaption></figcaption></figure></li>
+<li><p>Sign a message</p>
+<figure><img src=".gitbook/assets/04_sign_message (1).PNG" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/05_sign_message (2).png" alt=""><figcaption></figcaption></figure></li>
+<li><p>Enter the invite code</p>
+<figure><img src=".gitbook/assets/06_invite_code (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/07_invite_code (1).png" alt=""><figcaption></figcaption></figure></li>
+<li><p>Copy the address from your wallet. It will be used as reward address when starting the verifier.</p>
+<figure><img src=".gitbook/assets/08_invite_code (2).png" alt=""><figcaption></figcaption></figure>
+
+</li>
+</ol>
+<h2 id="running-the-scripts">Running the scripts</h2>
+<h3 id="linux">Linux</h3>
+<h4 id="tldr">TL;DR</h4>
+<blockquote>
+<p>Open the terminal and run the following commands to setup and execute the verifier program</p>
+</blockquote>
+<pre><code class="lang-bash"><span class="hljs-comment"># replace 0x-Fill-in-your-reward-address-here with your reward address below</span>
+curl -L https://github.com/cysic-labs/cysic-phase3/releases/download/v1.0.0/setup_linux.sh &gt; ~/setup_linux.sh &amp;&amp; bash ~/setup_linux.sh 0x-Fill-in-your-reward-address-here
+
+<span class="hljs-built_in">cd</span> ~/cysic-verifier/ &amp;&amp; bash start.sh
+</code></pre>
+<h4 id="detailed-steps-to-execute-verifier-on-linux">Detailed steps to execute verifier on Linux</h4>
+<ol>
+<li><p>First start your terminal program on Linux. The shortcut is <code>Ctrl-Alt-T</code> on Ubuntu.</p>
+<figure><img src=".gitbook/assets/20_linux.png" alt=""><figcaption></figcaption></figure>
+
+<p>\
+Or you can search for it in the applications and click on Terminal to start it.</p>
+<figure><img src=".gitbook/assets/21_linux.png" alt=""><figcaption></figcaption></figure></li>
+<li><p>Use the following command in the terminal to download and run the setup script( copy and paste the following command in terminal and press enter to run them). Please replace 0x-Fill-in-your-reward-address-here with your own reward address below.</p>
+<pre><code>#replace 0x-Fill-in-your-reward-address-here to your reward address below
+curl -L https://github.com/cysic-labs/cysic-phase3/releases/download/v1.0.0/setup_linux.sh &gt; ~/setup_linux.sh &amp;&amp; bash ~/setup_linux.sh 0x-Fill-in-your-reward-address-here
+</code></pre></li>
+<li><p>This script will do the following job:</p>
+<ol>
+<li>Download the verifier program and library: <code>verifier</code> &amp; <code>libdarwin_verifier.so</code> &amp; libdarwin_verifier &amp; <code>librsp.so</code></li>
+<li>Create the verifier config file named <code>config.toml</code></li>
+<li>Create script to run the verifier <code>start.sh</code>\</li>
+</ol>
+</li>
+</ol>
+<pre><code>You can go to `~/cysic-verifier` folder to see all the above contents created successfully after running the script.
+
+&lt;figure&gt;&lt;img src=&quot;.gitbook/assets/23_linux.png&quot; alt=&quot;&quot;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+</code></pre><ol>
+<li><strong>Finish start the verifier program, use the following command in terminal to start the verifier program</strong></li>
+</ol>
+<pre><code class="lang-bash">  <span class="hljs-built_in">cd</span> ~/cysic-verifier/ &amp;&amp; bash start.sh
+</code></pre>
+<p><img src=".gitbook/assets/24_linux (1" alt="">.png&gt;)</p>
+<blockquote>
+<p>The verifier may need some minutes to connect to the chain. When you see output like <code>send heartbeat to server</code>, then the verifier is running successfully.</p>
+<p>The verifier program will create mnemonic files for you. Your submitted address mnemonic file is in: <code>~/.cysic/keys/</code> folder, please keep it or you can not run the verifier program again.</p>
+</blockquote>
+<h3 id="macos">MacOS</h3>
+<h4 id="tldr">TL;DR</h4>
+<p>Open the terminal and run the following commands to setup and execute the verifier program</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># replace 0x-Fill-in-your-reward-address-here with your reward address below</span>
+
+curl -L https://github.com/cysic-labs/cysic-phase3/releases/download/v1.0.0/setup_mac.sh &gt; ~/setup_mac.sh &amp;&amp; bash ~/setup_mac.sh 0x-Fill-in-your-reward-address-here
+
+<span class="hljs-built_in">cd</span> ~/cysic-verifier/ &amp;&amp; bash start.sh
+</code></pre>
+<h4 id="detailed-steps-to-execute-verifier-on-macos">Detailed steps to execute verifier on MacOS</h4>
+<ol>
+<li><p>First start your terminal program on MacOS. Search for it in the applications and click on Terminal to start it.</p>
+<figure><img src=".gitbook/assets/25_mac.png" alt=""><figcaption></figcaption></figure></li>
+<li><p>Use the following command in the terminal to download and run the setup script (copy and paste the following command in terminal and press enter to run them). Please replace the 0x-Fill-in-your-reward-address-here with your own reward address.</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># replace 0x-Fill-in-your-reward-address-here with your reward address</span>
+
+curl -L https://github.com/cysic-labs/cysic-phase3/releases/download/v1.0.0/setup_mac.sh &gt; ~/setup_mac.sh &amp;&amp; bash ~/setup_mac.sh 0x-Fill-in-your-reward-address-here
+</code></pre>
+<p><img src=".gitbook/assets/26_mac.png" alt="IMAGE"></p>
+</li>
+<li><p>This script will do the following job:</p>
+<ul>
+<li>Download the verifier program and library: verifier_mac &amp; libzkp.dylib &amp; librsp.dylib</li>
+<li>Create the verifier config file named config.toml</li>
+<li><p>Create script to run the verifier start.sh\
+You can go to ~/cysic-verifier folder to see all the above contents created successfully after running the script.</p>
+<figure><img src=".gitbook/assets/27_mac.png" alt=""><figcaption></figcaption></figure></li>
+</ul>
+</li>
+<li><strong>Use the following command in terminal to start the verifier program:</strong></li>
+</ol>
+<pre><code class="lang-bash"><span class="hljs-built_in">cd</span> ~/cysic-verifier/ &amp;&amp; bash start.sh
+</code></pre>
+<p><img src=".gitbook/assets/28_mac.png" alt="IMAGE"></p>
+<blockquote>
+<p>The verifier may need some minutes to connect to the chain. When you see output like <code>send heartbeat to server</code>, then the verifier is running successfully.</p>
+<p>The verifier program will create mnemonic files for you. Your submitted address mnemonic file is in: <code>~/.cysic/keys/</code> folder, please keep it or you can not run the verifier program again.</p>
+</blockquote>
+<h3 id="windows">Windows</h3>
+<h4 id="tldr">TL;DR</h4>
+<p>Open Windows Powershell and run the following commands to setup and execute the verifier program</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># replace 0x-Fill-in-your-reward-address-here with your reward address below</span>
+
+<span class="hljs-built_in">cd</span> <span class="hljs-variable">$env</span>:USERPROFILE
+Invoke-WebRequest -Uri <span class="hljs-string">&quot;https://github.com/cysic-labs/cysic-phase3/releases/download/v1.0.0/setup.ps1&quot;</span> -OutFile <span class="hljs-string">&quot;setup_win.ps1&quot;</span>
+.\setup_win.ps1 -CLAIM_REWARD_ADDRESS <span class="hljs-string">&quot;0x-Fill-in-your-reward-address-here&quot;</span>
+
+<span class="hljs-comment"># run the verifier</span>
+
+<span class="hljs-built_in">cd</span> <span class="hljs-variable">$env</span>:USERPROFILE\cysic-verifier
+.\start.ps1
+</code></pre>
+<h4 id="detailed-steps-to-execute-verifier-on-windows">Detailed steps to execute verifier on Windows</h4>
+<ol>
+<li><p>First start your terminal program on Windows. Search for it in the applications and start Powershell as administrator.</p>
+<figure><img src=".gitbook/assets/30_win.png" alt=""><figcaption></figcaption></figure></li>
+<li><p>Use the following command in the terminal to download and run the setup script (copy and paste the following command in Powershell and press enter to run them). Please replace 0x-Fill-in-your-reward-address-here with your own reward address below.</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># replace 0x-Fill-in-your-reward-address-here with your reward address below</span>
+
+<span class="hljs-built_in">cd</span> <span class="hljs-variable">$env</span>:USERPROFILE
+Invoke-WebRequest -Uri <span class="hljs-string">&quot;https://github.com/cysic-labs/cysic-phase3/releases/download/v1.0.0/setup.ps1&quot;</span> -OutFile <span class="hljs-string">&quot;setup_win.ps1&quot;</span>
+.\setup_win.ps1 -CLAIM_REWARD_ADDRESS <span class="hljs-string">&quot;0x-Fill-in-your-reward-address-here&quot;</span>
+</code></pre>
+<figure><img src=".gitbook/assets/31_win.png" alt=""><figcaption></figcaption></figure></li>
+<li><p>This script will do the following job:</p>
+<ul>
+<li>Download the verifier program and library: verifier.exe, start.ps1 &amp; zkp.dll</li>
+<li>Create the verifier config file named config.toml</li>
+<li><p>Update Path variable to add cysic-verifier</p>
+<figure><img src=".gitbook/assets/33_win.png" alt=""><figcaption></figcaption></figure></li>
+<li><p>You can go to <code>~/cysic-verifier</code> folder to see all the above contents created successfully after running the script.</p>
+<figure><img src=".gitbook/assets/32_win.png" alt=""><figcaption></figcaption></figure></li>
+</ul>
+</li>
+<li><strong>Finish start the verifier program, use the following command in terminal to start the verifier program:</strong></li>
+</ol>
+<pre><code class="lang-bash"><span class="hljs-comment"># run the verifier</span>
+
+<span class="hljs-built_in">cd</span> <span class="hljs-variable">$env</span>:USERPROFILE\cysic-verifier
+.\start.ps1
+</code></pre>
+<figure><img src=".gitbook/assets/34_win.png" alt=""><figcaption></figcaption></figure>
+
+<blockquote>
+<p>The verifier may need some minutes to connect to the chain. When you see output like <code>send heartbeat to server</code>, then the verifier is running successfully.</p>
+<p>The verifier program will create mnemonic files for you. Your submitted address mnemonic file is in: <code>~/.cysic/keys/</code> folder, please keep it or you can not run the verifier program again.</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="how-to-run-a-prover-node.html" class="navigation navigation-prev " aria-label="Previous page: How to Run a Prover Node">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="faqs-and-common-issues-solutions.html" class="navigation navigation-next " aria-label="Next page: FAQs & Common Issues/Solutions">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"How to Run a Verifier Node","level":"3.2","depth":1,"next":{"title":"FAQs & Common Issues/Solutions","level":"3.3","depth":1,"path":"faqs-and-common-issues-solutions.md","ref":"faqs-and-common-issues-solutions.md","articles":[]},"previous":{"title":"How to Run a Prover Node","level":"3.1","depth":1,"path":"how-to-run-a-prover-node.md","ref":"how-to-run-a-prover-node.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"}},"file":{"path":"how-to-run-a-verifier-node.md","mtime":"2025-05-26T07:43:52.002Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-05-26T07:46:37.870Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
